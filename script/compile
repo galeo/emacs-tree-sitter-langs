@@ -55,5 +55,6 @@ esac
     emacs -Q --batch \
           --directory . \
           --load tree-sitter-langs-build \
+          --eval "(add-to-list 'exec-path (expand-file-name \"node_modules/.bin\" default-directory))" \
           --eval "$code"
 )
